@@ -8,13 +8,13 @@ $recipes = all_recipes();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Адмін-панель</title>
-    <link rel="stylesheet" href="../css/main.css?v=3">
+    <link rel="stylesheet" href="../css/main.css?v=4">
 </head>
 <body>
 <header class="top">
     <div class="wrap nav">
         <a class="logo" href="../index.php">Кулінарна книга</a>
-        <nav>
+        <nav class="menu">
             <a href="add.php">Додати</a>
             <a href="logout.php">Вийти</a>
         </nav>

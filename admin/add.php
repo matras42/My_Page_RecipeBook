@@ -8,13 +8,13 @@ $recipe = $recipe ?? ['id' => 0, 'title' => '', 'category' => '', 'author' => '�
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма рецепта</title>
-    <link rel="stylesheet" href="../css/main.css?v=3">
+    <link rel="stylesheet" href="../css/main.css?v=4">
 </head>
 <body>
 <header class="top">
     <div class="wrap nav">
         <a class="logo" href="index.php">Адмін-панель</a>
-        <nav>
+        <nav class="menu">
             <a href="../index.php">Сайт</a>
             <a href="logout.php">Вийти</a>
         </nav>
