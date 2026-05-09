@@ -344,10 +344,10 @@ body {
     background: #fff;
     border-radius: 16px;
     padding: 18px 16px;
-    display: grid;
-    grid-template-columns: minmax(0, 1.6fr) minmax(160px, .8fr) auto;
-    column-gap: 14px;
+    display: flex;
     align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
 .admin-row > span {
@@ -357,6 +357,12 @@ body {
 
 .admin-row > span:first-child {
     font-weight: 700;
+    flex: 1 1 42%;
+}
+
+.admin-row > span:nth-child(2) {
+    flex: 0 0 180px;
+    text-align: center;
 }
 
 .admin-actions {
@@ -365,6 +371,7 @@ body {
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+    margin-left: auto;
 }
 
 .small {
@@ -431,12 +438,14 @@ body {
     }
 
     .admin-row {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 10px;
     }
 
     .admin-actions {
         justify-content: flex-start;
+        margin-left: 0;
     }
 
     .editor {
