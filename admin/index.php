@@ -8,7 +8,7 @@ $recipes = all_recipes();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Адмін-панель</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main.css?v=3">
 </head>
 <body>
 <header class="top">
