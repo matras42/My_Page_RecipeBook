@@ -343,20 +343,43 @@ body {
 .admin-row {
     background: #fff;
     border-radius: 16px;
-    padding: 16px;
+    padding: 18px 16px;
     display: grid;
-    grid-template-columns: 1fr 180px 210px;
-    gap: 12px;
+    grid-template-columns: minmax(0, 1.6fr) minmax(160px, .8fr) auto;
+    column-gap: 14px;
     align-items: center;
 }
 
+.admin-row > span {
+    min-width: 0;
+    line-height: 1.45;
+}
+
+.admin-row > span:first-child {
+    font-weight: 700;
+}
+
+.admin-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .small {
-    padding: 8px 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+    padding: 8px 14px;
     border-radius: 10px;
     background: #ead7bd;
     color: #62370f;
     text-decoration: none;
     font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
 }
 
 .danger {
@@ -409,6 +432,11 @@ body {
 
     .admin-row {
         grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .admin-actions {
+        justify-content: flex-start;
     }
 
     .editor {
