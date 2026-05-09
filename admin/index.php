@@ -28,7 +28,7 @@ $recipes = all_recipes();
             <div class="admin-row">
                 <span><?= escape_text($recipe['title']) ?></span>
                 <span><?= escape_text($recipe['category']) ?></span>
-                <div>
+                <div class="admin-actions">
                     <a class="small" href="edit.php?id=<?= (int)$recipe['id'] ?>">Редагувати</a>
                     <a class="small danger" href="delete.php?id=<?= (int)$recipe['id'] ?>">Видалити</a>
                 </div>
